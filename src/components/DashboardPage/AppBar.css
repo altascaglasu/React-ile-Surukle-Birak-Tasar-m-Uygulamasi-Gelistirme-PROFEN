@@ -1,0 +1,84 @@
+.appbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: white;
+    /* AppBar'ın beyaz olması için */
+    color: black;
+    /* Yazı rengini siyah yapıyoruz */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* AppBar altına hafif bir gölge ekliyoruz */
+    justify-content: space-between;
+    /* İçeriği yaymak için */
+}
+
+.appbar-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Logo ile aksiyonlar arasında boşluk */
+    flex-grow: 1;
+    /* Aksiyonlar ile logo arasındaki boşluğu büyütmek için */
+}
+
+.appbar-logo {
+    height: 150px;
+    /* Logo boyutunu istediğiniz gibi ayarlayabilirsiniz */
+}
+
+.appbar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.appbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Aksiyonlar arasındaki boşluk */
+}
+
+.appbar-action {
+
+    background-color: transparent;
+    /* Arka planı kaldır */
+    border: none;
+    /* Çerçeveyi kaldır */
+    color: #333;
+    /* Yazı rengi */
+    padding: 10px 20px;
+    /* İç dolgu */
+    cursor: pointer;
+    /* İmleci işaretçi yap */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Hover animasyonu */
+}
+
+.appbar-action:hover {
+    background-color: rgba(244, 67, 54, 0.2);
+    /* %50 şeffaflık */
+    color: rgba(0, 0, 0, 0.8);
+    /* Yazı renginde %80 opaklık */
+    border-radius: 5%;
+}
+
+.appbar-logout {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appbar-logout:hover {
+    background-color: #d32f2f;
+    /* Hover efekti */
+}

@@ -1,0 +1,54 @@
+.property-panel {
+    width: 100%;
+    max-width: 350px;
+    padding: 16px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-panel h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 12px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.save-button {
+    background-color: #f44336;
+    border-radius: 10%;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    height: 5%;
+}
+
+
+@media (max-width: 768px) {
+    .property-panel {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .input-group input {
+        padding: 6px;
+    }
+
+
+}
